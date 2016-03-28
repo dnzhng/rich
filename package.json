@@ -4,10 +4,13 @@
   "description": "A React component library to help you build Rich UIs",
   "main": "./lib",
   "scripts": {
-    "test": "mocha test/helpers/setup.js test/unit/*.spec.js && npm run lint",
+    "test": "npm run test:unit && npm run test:browser && npm run lint",
+    "test:unit": "mocha test/helpers/setup.js test/unit/*.spec.js",
+    "test:browser": "karma start test/karma.conf.js",
     "build": "babel src --out-dir lib",
     "prepublish": "npm run build",
-    "lint": "eslint src && echo \"eslint: no lint errors\""
+    "lint": "eslint src && echo \"eslint: no lint errors\"",
+    "karma": "karma start test/karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -34,11 +37,25 @@
     "enzyme": "^2.2.0",
     "eslint": "^2.4.0",
     "eslint-plugin-react": "^4.2.3",
+    "istanbul-instrumenter-loader": "^0.2.0",
     "jsdom": "^8.1.0",
+    "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-cli": "^0.1.2",
+    "karma-coverage": "^0.5.5",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-mocha": "^0.2.2",
+    "karma-mocha-reporter": "^2.0.0",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
     "mocha": "^2.4.5",
+    "phantomjs-prebuilt": "^2.1.7",
     "react": "^0.14.7",
     "react-addons-test-utils": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react-dom": "^0.14.7",
+    "webpack": "^1.12.14"
   },
   "dependencies": {
     "react": "^0.14.7"
