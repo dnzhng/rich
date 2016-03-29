@@ -2,7 +2,7 @@ var webpack = require('webpack');
 
 module.exports = function (config) {
   config.set({
-    browsers: [ process.env.CONTINUOUS_INTEGRATION ? 'Firefox' : 'PhantomJS', 'Chrome' ], //run in Chrome
+    browsers: [ process.env.CONTINUOUS_INTEGRATION ? 'Firefox' : 'PhantomJS' ], //run in Chrome
     singleRun: true, //just run once by default
     frameworks: [ 'mocha' ], //use the mocha test framework
     colors: true,
@@ -45,7 +45,8 @@ module.exports = function (config) {
       'karma-sourcemap-loader',
       'karma-coverage',
       'karma-chrome-launcher',
-      'karma-phantomjs-launcher'
+      'karma-phantomjs-launcher',
+      'karma-firefox-launcher'
     ],
     webpackServer: {
       noInfo: true //please don't spam the console when running in karma!
