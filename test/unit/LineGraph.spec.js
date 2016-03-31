@@ -4,15 +4,28 @@ import { expect } from 'chai';
 import LineGraph from '../../src/LineGraph/';
 
 describe('<LineGraph />', () => {
+  let lineGraph;
+  beforeEach(() => {
+    lineGraph = mount(<LineGraph title="test" xAxis="xTest" yAxis="yTest" />);
+  })
 
   it('Should mount a div to the dom', () => {
-    const wrapper = mount(<LineGraph />);
-    expect(wrapper.find('div')).to.have.length(1);
+    expect(lineGraph.find('div')).to.have.length(1);
   });
 
   it('Should have classname LineGraph', () => {
-    const wrapper = mount(<LineGraph />);
-    expect(wrapper.contains(<div className="linegraph" />)).to.be.true;
-  })
+    expect(lineGraph.contains(<div className="linegraph" />)).to.be.true;
+  });
+
+  it('Should have correct props', () => {
+    expect(lineGraph.props.title).to.be.truthy;
+    expect(lineGraph.props.xAxis).to.be.truthy;
+    expect(lineGraph.props.yAxis).to.be.truthy;
+  });
+
+  it('Should have the proper subcomponents', () => {
+    expect(true).to.be.true;
+
+  });
 
 });
