@@ -6,7 +6,7 @@ import LineGraph from '../../src/LineGraph/';
 describe('<LineGraph />', () => {
   let lineGraph;
   beforeEach(() => {
-    lineGraph = mount(<LineGraph title="test" xAxis="xTest" yAxis="yTest" />);
+    lineGraph = shallow(<LineGraph title="test" xAxis="xTest" yAxis="yTest" />);
   })
 
   it('Should mount a div to the dom', () => {
@@ -14,7 +14,7 @@ describe('<LineGraph />', () => {
   });
 
   it('Should have classname LineGraph', () => {
-    expect(lineGraph.contains(<div className="linegraph" />)).to.be.true;
+    expect(lineGraph.find(".linegraph")).to.have.length(1);
   });
 
   it('Should have correct props', () => {

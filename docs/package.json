@@ -1,0 +1,23 @@
+{
+  "name": "rich-docs",
+  "version": "0.0.1",
+  "description": "Documentation site for Rich react library",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.ibm.com:zhangda/rich.git"
+  },
+  "private": true,
+  "dependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-loader": "^6.2.4",
+    "browser-sync": "^2.11.2",
+    "react": "^0.14.8",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.10.0"
+  }
+}

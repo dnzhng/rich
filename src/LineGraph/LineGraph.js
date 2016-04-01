@@ -1,5 +1,4 @@
 import React from 'react';
-import d3 from 'd3';
 
 class LineGraph extends React.Component {
 
@@ -18,7 +17,7 @@ class LineGraph extends React.Component {
 
   render() {
     return (
-      <div className="linegraph"></div>
+      <div className="linegraph">HELLO World</div>
     )
   }
 }
