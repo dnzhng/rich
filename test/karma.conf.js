@@ -2,7 +2,7 @@ var webpack = require('webpack');
 
 module.exports = function (config) {
   config.set({
-    browsers: [ 'PhantomJS', process.env.CONTINUOUS_INTEGRATION ? '' : 'Chrome' ], //run in only phantom on CI
+    browsers: process.env.CONTINUOUS_INGEGRATION ? ['PhantomJS'] : ['PhantomJS', 'Chrome'], //run in only phantom on CI
     singleRun: true, //just run once by default
     frameworks: [ 'mocha' ], //use the mocha test framework
     colors: true,
