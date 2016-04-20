@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 
 import {Chart} from '../../../src';
 
-const data = `
-date,close
+const data = `date,close
 1-May-12,58.13
 30-Apr-12,53.98
 27-Apr-12,67.00

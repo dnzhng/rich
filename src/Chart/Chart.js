@@ -1,6 +1,7 @@
 import React from 'react';
 import ChartFactory from '../d3/ChartFactory';
 import ReactDOM from 'react-dom';
+
 class Chart extends React.Component {
 
   static propTypes = {

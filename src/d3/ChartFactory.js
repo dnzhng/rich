@@ -56,7 +56,28 @@ ChartFactory.prototype.initialize = function(data, node, opts) {
   this.svg.append('g').attr('class', 'y axis')
       .append('text').attr('transform', 'rotate(-90)');
 
-  this.update(data);
+  let formattedData = this.parse(data, options.format);
+  this.update(formattedData);
+}
+
+ChartFactory.prototype.parse = function(data, format) {
+  let parseBy = {
+    csv: d3.csv.parse,
+    tsv: d3.tsv.parse,
+    json: (data) => {
+      if (!Array.isArray(data)) {
+        return [data];
+      } else {
+        return data;
+      }
+    }
+  }
+
+  if (!parseBy[format]) {
+    throw new Error(format + ' is not a valid data format');
+  }
+
+  return parseBy[format](data);
 }
 
 ChartFactory.LineGraph = LineGraph;
