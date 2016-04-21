@@ -35,7 +35,13 @@ ReactDOM.render(<Chart
   type='LineGraph'
   data={data}
   options={{
-  height: 400,
+  height: 270,
   width: 600,
-  format: 'csv'
+  format: 'csv',
+  margin: {
+    top: 30,
+    right: 20,
+    bottom: 30,
+    left: 50
+  }
 }}/>, document.getElementById('react-root'));

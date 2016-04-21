@@ -50,12 +50,6 @@ ChartFactory.prototype.initialize = function(data, node, opts) {
       .append('g')
       .attr('transform', 'translate(' + options.margin.left + ',' + options.margin.top + ')')
 
-  this.svg.append('g').attr('class', 'x axis')
-      .attr('transform', 'translate(0, ' + this.height + ')');
-
-  this.svg.append('g').attr('class', 'y axis')
-      .append('text').attr('transform', 'rotate(-90)');
-
   let formattedData = this.parse(data, options.format);
   this.update(formattedData);
 }
