@@ -4,7 +4,6 @@ const LineGraph = function() {};
 
 LineGraph.prototype.update = function(data) {
   let svg = this.svg;
-  let options = this.options;
 
   let parseDate = d3.time.format("%d-%b-%y").parse;
   let x = d3.time.scale().range([0, this.width]);
