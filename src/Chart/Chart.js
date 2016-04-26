@@ -15,7 +15,6 @@ class Chart extends React.Component {
   }
 
   componentDidMount() {
-    console.log("lolll");
     this._chart = new ChartFactory(this.props.type, this.props.data, ReactDOM.findDOMNode(this), this.props.options);
   }
 
