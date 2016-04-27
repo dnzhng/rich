@@ -5,4 +5,11 @@
 @import './fonts';
 @import './colors';
 
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: $white;
+}
 //Partials
+@import './home';
+@import './docs';

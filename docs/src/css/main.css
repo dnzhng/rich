@@ -13,6 +13,13 @@ path {
   stroke-width: 1;
   shape-rendering: crispEdges; }
 
+.rich-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
 @font-face {
   font-family: 'Shintia';
   src: url("../fonts/Shintia Script.eot");
@@ -205,3 +212,21 @@ body {
 
 .logo {
   font-family: "Shintia"; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #FDFDFD; }
+
+.rich-home .rich-banner {
+  background-color: #E24343; }
+
+.rich-home .brand {
+  color: #FDFDFD; }
+
+.rich-home .brand-logo {
+  font-family: 'Shintia';
+  font-size: 288px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: normal; }
