@@ -20,6 +20,33 @@ path {
   align-items: center;
   text-align: center; }
 
+.rich-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .rich-nav > .rich-nav-item {
+    margin-left: auto;
+    margin-right: auto; }
+
+.rich-nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.rich-nav-left {
+  align-items: center;
+  display: flex; }
+  .rich-nav-left .rich-nav-item:first-of-type {
+    margin-left: 15px; }
+
+.rich-nav-item {
+  margin-right: 15px; }
+  .rich-nav-item a {
+    text-decoration: none;
+    color: black; }
+
 @font-face {
   font-family: 'Shintia';
   src: url("../fonts/Shintia Script.eot");
@@ -230,3 +257,12 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: normal; }
+  .rich-home .brand-description {
+    font-weight: normal;
+    font-size: 24px; }
+  .rich-home .rich-nav {
+    background-color: #E24343; }
+    .rich-home .rich-nav a {
+      color: #FDFDFD; }
+    .rich-home .rich-nav .rich-nav-item {
+      margin-right: 30px; }

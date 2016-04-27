@@ -15,4 +15,20 @@
     margin-bottom: 20px;
     font-weight: normal;
   }
+
+  .brand-description {
+    font-weight: normal;
+    font-size: 24px;
+  }
+
+  .rich-nav {
+    background-color: $primary;
+    a {
+      color: $white;
+    }
+
+    .rich-nav-item {
+      margin-right: 30px;
+    }
+  }
 }
