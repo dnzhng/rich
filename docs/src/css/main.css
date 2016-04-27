@@ -218,15 +218,15 @@ body {
   height: 100vh;
   background-color: #FDFDFD; }
 
-.rich-home .rich-banner {
-  background-color: #E24343; }
-
-.rich-home .brand {
-  color: #FDFDFD; }
-
-.rich-home .brand-logo {
-  font-family: 'Shintia';
-  font-size: 288px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-weight: normal; }
+.rich-home {
+  height: 100vh; }
+  .rich-home .rich-banner {
+    background-color: #E24343; }
+  .rich-home .brand {
+    color: #FDFDFD; }
+  .rich-home .brand-logo {
+    font-family: 'Shintia';
+    font-size: 288px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: normal; }

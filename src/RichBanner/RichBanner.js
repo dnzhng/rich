@@ -7,7 +7,7 @@ class RichBanner extends React.Component {
 
   render() {
     let style = {
-      height : this.props.height + "vh"
+      height : this.props.height + "%"
     }
     return (
       <div className={"rich-banner"} style={style}>
