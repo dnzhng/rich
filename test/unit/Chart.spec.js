@@ -1,14 +1,14 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { expect } from 'chai';
-import Chart from '../../src/Chart/';
+import RichChart from '../../src/RichChart/';
 
-describe('<Chart />', () => {
+describe('<RichChart />', () => {
   let chart;
 
 
   beforeEach(() => {
-    chart = shallow(<Chart type="LineGraph" data={"data"} />);
+    chart = shallow(<RichChart type="LineGraph" data={"data"} />);
   })
 
   it('Should mount a div to the dom', () => {
@@ -21,7 +21,7 @@ describe('<Chart />', () => {
 
   it('Should change class name depending on type passed in', () => {
     expect(chart.find(".LineGraph")).to.have.length(1);
-    chart = shallow(<Chart type="PieChart" data={"data"} />);
+    chart = shallow(<RichChart type="PieChart" data={"data"} />);
     expect(chart.find(".LineGraph")).to.have.length(0);
     expect(chart.find(".PieChart")).to.have.length(1);
 

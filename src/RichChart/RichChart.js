@@ -2,7 +2,7 @@ import React from 'react';
 import ChartFactory from '../d3/ChartFactory';
 import ReactDOM from 'react-dom';
 
-class Chart extends React.Component {
+class RichChart extends React.Component {
 
   static propTypes = {
     type: React.PropTypes.string.isRequired,
@@ -34,4 +34,4 @@ class Chart extends React.Component {
 
 }
 
-export default Chart;
+export default RichChart;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import {Chart} from '../../../src';
+import {RichChart} from '../../../src';
 
 const data = `date,close
 1-May-12,58.13
@@ -36,7 +36,7 @@ class Docs extends React.Component {
     return (
 
 
-      <Chart
+      <RichChart
         type='LineGraph'
         data={data}
         options={{
