@@ -35,4 +35,8 @@ LineGraph.prototype.update = function(data) {
       .call(yAxis);
 }
 
+LineGraph.prototype.remove = function() {
+  return;
+}
+
 export default LineGraph;

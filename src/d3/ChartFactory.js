@@ -70,7 +70,7 @@ ChartFactory.prototype.parse = function(data, format) {
   if (!parseBy[format]) {
     throw new Error(format + ' is not a valid data format');
   }
-
+  
   return parseBy[format](data);
 }
 
