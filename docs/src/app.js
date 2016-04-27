@@ -5,7 +5,7 @@ var browserSync = require('browser-sync');
 var webpack = require('webpack');
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require('webpack-hot-middleware');
-
+var historyApiFallback = require('connect-history-api-fallback');
 /**
  * Require ./webpack.config.js and make a bundler from it
  */
@@ -18,7 +18,7 @@ var bundler = webpack(webpackConfig);
 browserSync({
     server: {
       baseDir: 'src',
-
+      index: "index.html",
       middleware: [
         webpackDevMiddleware(bundler, {
           // IMPORTANT: dev middleware can't access config, so we should
@@ -33,7 +33,8 @@ browserSync({
         }),
 
         // bundler should be the same as above
-        webpackHotMiddleware(bundler)
+        webpackHotMiddleware(bundler),
+        historyApiFallback()
       ]
     },
 
