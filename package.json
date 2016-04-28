@@ -5,7 +5,7 @@
   "main": "./lib",
   "scripts": {
     "test": "npm run test:unit && npm run test:browser && npm run lint",
-    "test:unit": "mocha test/helpers/setup.js test/unit/*.spec.js",
+    "test:unit": "mocha test/helpers/setup.js test/unit/**/*.spec.js",
     "test:browser": "karma start test/karma.conf.js",
     "build": "babel src --out-dir lib",
     "prepublish": "npm run build",

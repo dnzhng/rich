@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { expect } from 'chai';
-import RichBanner from '../../src/RichBanner/';
+import RichBanner from '../../../src/RichBanner/';
 
 describe('<RichBanner />', () => {
   let banner;

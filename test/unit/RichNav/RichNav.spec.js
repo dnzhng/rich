@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { expect } from 'chai';
-import RichNav from '../../src/RichNav/';
+import RichNav from '../../../src/RichNav/';
 
 describe('<RichNav />', () => {
   let nav;
