@@ -1,3 +1,14 @@
+.rich-card .rich-card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.rich-card .rich-card-description {
+  text-align: center; }
+
+.rich-card img {
+  width: auto; }
+
 .rich-chart {
   font: 12px Helvetica; }
 
@@ -267,3 +278,14 @@ body {
       color: #FDFDFD; }
     .rich-home .rich-nav .rich-nav-item {
       margin-right: 30px; }
+  .rich-home .rich-card {
+    width: 20%; }
+    .rich-home .rich-card img {
+      max-height: 200px; }
+  .rich-home .row {
+    padding-top: 30px;
+    display: flex;
+    margin: 0 20%; }
+  .rich-home .col {
+    flex: 1;
+    padding: 10px; }

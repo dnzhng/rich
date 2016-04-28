@@ -1,0 +1,14 @@
+.rich-card {
+  .rich-card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rich-card-description {
+    text-align: center;
+  }
+  img {
+    width: auto;
+  }
+}
