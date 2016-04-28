@@ -255,11 +255,12 @@ body {
     font-family: 'Shintia';
     font-size: 288px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-weight: normal; }
   .rich-home .brand-description {
     font-weight: normal;
-    font-size: 24px; }
+    font-size: 24px;
+    margin-top: 0px; }
   .rich-home .rich-nav {
     background-color: #E24343; }
     .rich-home .rich-nav a {
