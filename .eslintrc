@@ -8,6 +8,8 @@ extends: eslint:recommended
 
 parser: babel-eslint
 
+rules:
+  no-unused-vars: 1
 plugins:
   - react
 

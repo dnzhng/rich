@@ -3,7 +3,7 @@ import NavItem from './NavItem';
 
 class RichSideNav extends React.Component {
   static propTypes = {
-    header: React.PropTypes.string.isRequired
+    header: React.PropTypes.string
   }
 
   render() {
