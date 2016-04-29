@@ -26,10 +26,29 @@
   }
 }
 
-.rich-nav-item {
-  a {
-    text-decoration: none;
-    color: black;
+.rich-side-nav {
+  height: 100%;
+  min-width: 200px;
+  position: fixed;
+
+  .rich-nav-item {
+    min-height: 35px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
   }
+
+  .rich-side-nav-header {
+    min-height: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.rich-nav-item {
+  text-decoration: none;
+  color: black;
   margin-right: 15px;
 }

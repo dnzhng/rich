@@ -2,7 +2,7 @@ import React from 'react';
 
 class RichNav extends React.Component {
 
-  static propTyes = {
+  static propTypes = {
     height: React.PropTypes.number.isRequired
   }
 

@@ -1,0 +1,26 @@
+.rich-docs {
+  margin-left: 15%;
+}
+
+.rich-side-nav {
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  background: $white;
+  .rich-nav-item {
+    @include rich-transition(background-color);
+
+    &:hover {
+      @include rich-transition(background-color);
+      background-color: $grey;
+    }
+  }
+  .rich-side-nav-header {
+    background-color: $primary;
+    font-family: 'Shintia';
+    font-size: 3em;
+    color: $white;
+    &:hover {
+      background-color: $primary;
+    }
+  }
+
+}

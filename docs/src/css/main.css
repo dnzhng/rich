@@ -52,11 +52,26 @@ path {
   .rich-nav-left .rich-nav-item:first-of-type {
     margin-left: 15px; }
 
+.rich-side-nav {
+  height: 100%;
+  min-width: 200px;
+  position: fixed; }
+  .rich-side-nav .rich-nav-item {
+    min-height: 35px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-right: 0; }
+  .rich-side-nav .rich-side-nav-header {
+    min-height: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center; }
+
 .rich-nav-item {
+  text-decoration: none;
+  color: black;
   margin-right: 15px; }
-  .rich-nav-item a {
-    text-decoration: none;
-    color: black; }
 
 @font-face {
   font-family: 'Shintia';
@@ -254,7 +269,8 @@ body {
 body {
   margin: 0;
   height: 100vh;
-  background-color: #FDFDFD; }
+  background-color: #FDFDFD;
+  color: #0F0F0F; }
 
 .rich-home {
   height: 100vh; }
@@ -289,3 +305,26 @@ body {
   .rich-home .col {
     flex: 1;
     padding: 10px; }
+
+.rich-docs {
+  margin-left: 15%; }
+
+.rich-side-nav {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  background: #FDFDFD; }
+  .rich-side-nav .rich-nav-item {
+    -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+    -moz-transition: background-color 0.3s, -moz-transform 0.3s;
+    transition: background-color 0.3s, transform 0.3s; }
+    .rich-side-nav .rich-nav-item:hover {
+      -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+      -moz-transition: background-color 0.3s, -moz-transform 0.3s;
+      transition: background-color 0.3s, transform 0.3s;
+      background-color: #D3D3D3; }
+  .rich-side-nav .rich-side-nav-header {
+    background-color: #E24343;
+    font-family: 'Shintia';
+    font-size: 3em;
+    color: #FDFDFD; }
+    .rich-side-nav .rich-side-nav-header:hover {
+      background-color: #E24343; }

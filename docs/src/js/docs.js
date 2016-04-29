@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
-import {RichChart} from '../../../src';
+import { RichChart, RichSideNav, NavItem } from '../../../src';
 
 const data = `date,close
 1-May-12,58.13
@@ -35,21 +34,34 @@ class Docs extends React.Component {
 
     return (
 
+      <div>
+        <RichSideNav header="Rich">
+          <NavItem href="#d3">D3</NavItem>
+          <NavItem href="#banner">Banner</NavItem>
+          <NavItem href="#card">Card</NavItem>
+          <NavItem href="#nav">Nav</NavItem>
+        </RichSideNav>
+        <div className="rich-docs">
+          <RichChart
+            type='LineGraph'
+            data={data}
+            options={{
+              height: 270,
+              width: 600,
+              format: 'csv',
+              margin: {
+                top: 30,
+                right: 20,
+                bottom: 30,
+                left: 50
+              }
+            }}/>
 
-      <RichChart
-        type='LineGraph'
-        data={data}
-        options={{
-          height: 270,
-          width: 600,
-          format: 'csv',
-          margin: {
-            top: 30,
-            right: 20,
-            bottom: 30,
-            left: 50
-          }
-      }}/>
+        </div>
+
+      </div>
+
+
 
     )
   }

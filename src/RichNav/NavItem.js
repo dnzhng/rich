@@ -1,11 +1,12 @@
 import React from 'react';
-
+import classNames from 'classnames';
 class NavItem extends React.Component {
   render() {
+    let clazz = classNames('rich-nav-item', this.props.className);
     return (
-      <div className={'rich-nav-item ' + this.props.className}>
-        <a href={this.props.href} >{this.props.children}</a>
-      </div>
+      <a className={clazz} href={this.props.href}>
+        {this.props.children}
+      </a>
     )
   }
 }

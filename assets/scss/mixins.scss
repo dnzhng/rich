@@ -1,0 +1,5 @@
+@mixin rich-transition($property) {
+    -webkit-transition: $property 0.3s, -webkit-transform 0.3s;
+    -moz-transition: $property 0.3s, -moz-transform 0.3s;
+    transition: $property 0.3s, transform 0.3s;
+}
