@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Child component of RichNav. All child components will be on the left side of the nav
+ */
 class NavLeft extends React.Component {
   render() {
     return (

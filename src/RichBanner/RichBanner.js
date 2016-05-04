@@ -1,7 +1,14 @@
 import React from 'react';
 
+/**
+ * Banner component for elements that should span the entire width of the parent div, i.e.
+ * full screen views
+ */
 class RichBanner extends React.Component {
   static propTypes = {
+    /**
+     * Specify the height in terms percentage of the parent div
+     */
     height: React.PropTypes.number.isRequired
   }
 

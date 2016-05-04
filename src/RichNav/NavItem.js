@@ -1,5 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
+
+/**
+ * Nav bar items
+ */
 class NavItem extends React.Component {
   render() {
     let clazz = classNames('rich-nav-item', this.props.className);

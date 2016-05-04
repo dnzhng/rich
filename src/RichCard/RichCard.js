@@ -1,7 +1,14 @@
 import React from 'react';
 import classNames from 'classnames';
+
+/**
+ * Card component - includes an image and a description for that image, contained in a 'card'
+ */
 class RichCard extends React.Component {
   static propTypes = {
+    /**
+     * Specify the image url as a string
+     */
     imageUrl: React.PropTypes.string
   }
 

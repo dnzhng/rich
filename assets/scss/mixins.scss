@@ -1,3 +1,7 @@
+/**
+ * Simple fade-in/fade-out mixin for the given property
+ * @param $property  A CSS property, e.g. background-color, font-color
+ */
 @mixin rich-transition($property) {
     -webkit-transition: $property 0.3s, -webkit-transform 0.3s;
     -moz-transition: $property 0.3s, -moz-transform 0.3s;

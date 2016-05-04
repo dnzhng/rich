@@ -1,8 +1,14 @@
 import React from 'react';
 import NavItem from './NavItem';
 
+/**
+ * A nav bar that is pinned to the side of the screen
+ */
 class RichSideNav extends React.Component {
   static propTypes = {
+    /**
+     * Optional label as the first nav item in the side nav
+     */
     header: React.PropTypes.string
   }
 
