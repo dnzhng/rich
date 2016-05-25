@@ -1,5 +1,6 @@
 import React from 'react';
 import { RichChart, RichSideNav, NavItem } from '../../../src';
+import { Link } from 'react-router';
 import * as Documentation from './docs/';
 
 class Docs extends React.Component {
@@ -7,8 +8,8 @@ class Docs extends React.Component {
   getActive() {
     let active = "overview";
 
-    if (this.props.routes && this.props.routes[1] && this.props.routes[1].active) {
-      active = this.props.routes[1].active;
+    if (this.props.routes && this.props.routes[2] && this.props.routes[2].active) {
+      active = this.props.routes[2].active;
     }
 
     return active;
@@ -21,10 +22,10 @@ class Docs extends React.Component {
 
       <div>
         <RichSideNav header="Rich">
-          <NavItem href="/docs/d3">D3</NavItem>
-          <NavItem href="/docs/banner">Banner</NavItem>
-          <NavItem href="/docs/card">Card</NavItem>
-          <NavItem href="/docs/nav">Nav</NavItem>
+          <Link className="rich-nav-item" to="/docs/d3">D3</Link>
+          <Link className="rich-nav-item" to="/docs/banner">Banner</Link>
+          <Link className="rich-nav-item" to="/docs/card">Card</Link>
+          <Link className="rich-nav-item" to="/docs/nav">Nav</Link>
         </RichSideNav>
         <div className="rich-docs">
           <Child />

@@ -4,7 +4,12 @@
   "description": "Documentation site for Rich react library",
   "scripts": {
     "start": "node src/app.js & npm run watch-css",
-    "watch-css": "node-sass -w --include-path scss src/scss/main.scss src/css/main.css"
+    "clean": "rm -rf build",
+    "watch-css": "node-sass -w --include-path scss src/scss/main.scss src/css/main.css",
+    "build:css": "node-sass --include-path scss src/scss/main.scss build/css/main.css",
+    "build:js": "webpack --config webpack-build.config.js",
+    "build": "npm run clean && npm run build:js",
+    "deploy": "npm run build && git-directory-deploy --directory build/"
   },
   "repository": {
     "type": "git",
@@ -16,6 +21,7 @@
     "babel-loader": "^6.2.4",
     "browser-sync": "^2.11.2",
     "connect-history-api-fallback": "^1.2.0",
+    "copy-webpack-plugin": "^3.0.0",
     "react": "^0.14.8",
     "react-hot-loader": "^1.3.0",
     "react-router": "^2.3.0",
@@ -24,7 +30,11 @@
     "webpack-hot-middleware": "^2.10.0"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
     "node-sass": "^3.5.3",
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.9.1",
+    "static-site-generator-webpack-plugin": "^2.0.1"
   }
 }

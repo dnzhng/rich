@@ -10,7 +10,7 @@ class Home extends React.Component {
         <RichNav height={80} >
           <NavRight>
             <NavItem href="/">Get Started</NavItem>
-            <NavItem href="/docs">Docs</NavItem>
+            <Link className="rich-nav-item" to="/docs">Docs</Link>
             <NavItem href="https://github.ibm.com/zhangda/rich">GitHub</NavItem>
           </NavRight>
         </RichNav>
