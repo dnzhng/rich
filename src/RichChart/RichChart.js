@@ -24,7 +24,11 @@ class RichChart extends React.Component {
     /**
      * Any chart specific options
      */
-    options: React.PropTypes.object
+    options: React.PropTypes.object,
+    /**
+     * Optional extra classes passed in
+     */
+    className: React.PropTypes.string
   }
 
   /**

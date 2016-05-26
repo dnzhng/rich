@@ -14,7 +14,15 @@ class RichSideNav extends React.Component {
     /**
      * Optional href for clicking on the banner on the top of the side nav
      */
-    href: React.PropTypes.string
+    href: React.PropTypes.string,
+    /**
+     * Optional extra classes passed in
+     */
+    className: React.PropTypes.string,
+    /**
+     * Optional children to be nested in banner
+     */
+    children: React.PropTypes.node
   }
 
   render() {

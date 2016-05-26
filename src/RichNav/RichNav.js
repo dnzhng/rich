@@ -9,7 +9,15 @@ class RichNav extends React.Component {
     /**
      * Pass in the specific height in pixels
      */
-    height: React.PropTypes.number.isRequired
+    height: React.PropTypes.number.isRequired,
+    /**
+     * Optional extra classes passed in
+     */
+    className: React.PropTypes.string,
+    /**
+     * Optional children to be nested in banner
+     */
+    children: React.PropTypes.node
   }
 
   render() {

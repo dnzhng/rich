@@ -9,7 +9,15 @@ class RichCard extends React.Component {
     /**
      * Specify the image url as a string
      */
-    imageUrl: React.PropTypes.string
+    imageUrl: React.PropTypes.string,
+    /**
+     * Optional extra classes passed in
+     */
+    className: React.PropTypes.string,
+    /**
+     * Optional children to be nested in banner
+     */
+    children: React.PropTypes.node
   }
 
   render() {

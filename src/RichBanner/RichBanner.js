@@ -9,7 +9,15 @@ class RichBanner extends React.Component {
     /**
      * Specify the height in terms percentage of the parent div
      */
-    height: React.PropTypes.number.isRequired
+    height: React.PropTypes.number.isRequired,
+    /**
+     * Optional extra classes passed in
+     */
+    className: React.PropTypes.string,
+    /**
+     * Optional children to be nested in banner
+     */
+    children: React.PropTypes.node
   }
 
   render() {
