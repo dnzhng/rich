@@ -1,6 +1,7 @@
 import React from 'react';
 import ChartFactory from '../d3/ChartFactory';
 import ReactDOM from 'react-dom';
+import classNames from 'classnames';
 
 /**
  * Main component for d3 charts, uses the Chart Factory
@@ -45,8 +46,9 @@ class RichChart extends React.Component {
   }
 
   render() {
+    let clazz = classNames('rich-chart', this.props.type, this.props.className);
     return (
-      <div className={'rich-chart ' + this.props.type}></div>
+      <div className={clazz}></div>
     );
   }
 

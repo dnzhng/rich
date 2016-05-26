@@ -21,7 +21,8 @@ class Docs extends React.Component {
     return (
 
       <div>
-        <RichSideNav header="Rich">
+        <RichSideNav>
+          <Link className="rich-nav-item rich-side-nav-header" to="/">Rich</Link>
           <Link className="rich-nav-item" to="/docs/d3">D3</Link>
           <Link className="rich-nav-item" to="/docs/banner">Banner</Link>
           <Link className="rich-nav-item" to="/docs/card">Card</Link>

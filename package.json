@@ -9,7 +9,7 @@
     "test:browser": "karma start test/karma.conf.js",
     "build": "babel src --out-dir lib",
     "prepublish": "npm run build",
-    "lint": "eslint src && echo \"eslint: no lint errors\"",
+    "lint": "eslint --config .eslintrc src",
     "karma": "karma start test/karma.conf.js"
   },
   "repository": {
@@ -36,7 +36,7 @@
     "chai": "^3.5.0",
     "enzyme": "^2.2.0",
     "eslint": "^2.4.0",
-    "eslint-plugin-react": "^4.2.3",
+    "eslint-plugin-react": "^4.3.0",
     "istanbul-instrumenter-loader": "^0.2.0",
     "jsdom": "^8.1.0",
     "karma": "^0.13.22",

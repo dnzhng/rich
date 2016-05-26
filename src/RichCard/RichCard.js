@@ -13,9 +13,9 @@ class RichCard extends React.Component {
   }
 
   render() {
-    let richCard = classNames('rich-card', this.props.className);
+    let clazz = classNames('rich-card', this.props.className);
     return (
-      <div className={richCard}>
+      <div className={clazz}>
         <div className="rich-card-image">
           <img src={this.props.imageUrl} />
         </div>
