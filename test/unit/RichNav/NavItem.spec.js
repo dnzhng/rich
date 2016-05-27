@@ -8,7 +8,7 @@ describe('<NavItem />', () => {
 
 
   beforeEach(() => {
-    nav = shallow(<NavItem />);
+    nav = shallow(<NavItem href="/"/>);
   })
 
   it('Should mount an a tag to the dom', () => {
