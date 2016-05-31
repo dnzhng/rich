@@ -1,5 +1,5 @@
 import React from 'react';
-import { RichChart } from '../../../../src/'
+import { RichChart } from '../../../../../src/'
 
 const data = `date,close
 1-May-12,58.13
