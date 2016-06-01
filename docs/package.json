@@ -9,7 +9,8 @@
     "build:css": "node-sass --include-path scss src/scss/main.scss build/css/main.css",
     "build:js": "webpack --config webpack-build.config.js",
     "build": "npm run clean && npm run build:js",
-    "deploy": "npm run build && git-directory-deploy --directory build/"
+    "gh-pages": "git-directory-deploy --directory build --username 'Dan Zhang' --email 'zhangda@us.ibm.com'",
+    "deploy": "npm run build && npm run gh-pages"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "webpack-hot-middleware": "^2.10.0"
   },
   "devDependencies": {
+    "git-directory-deploy": "^1.5.0",
     "node-sass": "^3.5.3",
     "nodemon": "^1.9.1"
   }
