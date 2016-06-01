@@ -1,13 +1,12 @@
 import React from 'react';
+import Readme from 'raw!./README.md';
+import Markdown from 'react-markdown';
 
 class nav extends React.Component {
   render() {
     return (
       <div id="nav">
-        <h1>Navigation</h1>
-        <p>
-          Rich offers two types of navigation: <code>RichNav</code> and <code>RichSideNav</code>
-        </p>
+        <Markdown source={Readme} />
       </div>
     )
   }
