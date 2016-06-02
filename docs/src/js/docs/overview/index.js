@@ -1,10 +1,12 @@
 import React from 'react';
+import Readme from 'raw!./README.md';
+import Markdown from 'react-markdown';
 
 class overview extends React.Component {
   render() {
     return (
       <div id="overview">
-        Overview
+        <Markdown source={Readme} />
       </div>
     )
   }
