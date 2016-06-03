@@ -1,5 +1,7 @@
 import React from 'react';
 import { RichChart } from '../../../../../src/'
+import Readme from 'raw!./README.md';
+import Markdown from 'react-markdown';
 
 const data = `date,close
 1-May-12,58.13
@@ -33,6 +35,8 @@ class d3 extends React.Component {
   render() {
     return (
       <div id="d3">
+        <Markdown source={Readme} />
+        
         <RichChart
           type='LineGraph'
           data={data}
